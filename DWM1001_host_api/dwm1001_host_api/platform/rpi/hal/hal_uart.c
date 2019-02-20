@@ -43,7 +43,10 @@ int HAL_UART_Init(void)
 	HAL_Print("\tUART: Init start.\n");
    
    // SETUP UART    
-      uart0_filestream = open("/dev/serial0", O_RDWR | O_NOCTTY | O_NDELAY); //Open in non blocking read/write mode
+   
+
+   //WAS WORKING WITH /dev/serial0 .... DONT KNOW WHY ITS NOT WORKING NOW....
+    uart0_filestream = open("/dev/serial0", O_RDWR | O_NOCTTY | O_NDELAY); //Open in non blocking read/write mode
    // uart0_filestream = open("/dev/ttyACM0", O_RDWR | O_NOCTTY | O_NDELAY); //Open in non blocking read/write mode
    // uart0_filestream = open("/dev/tty0", O_RDWR | O_NOCTTY | O_NDELAY); //Open in non blocking read/write mode
    
