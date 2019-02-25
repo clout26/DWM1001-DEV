@@ -80,6 +80,20 @@ int main(void)
     {
       HAL_Print("\t[%d,%d,%d,%u]\n", loc.p_pos->x, loc.p_pos->y, loc.p_pos->z,
             loc.p_pos->qf);
+            sprintf(
+              udp_message,
+              "[%d,%d,%d,%u]",
+              //loc.anchors.dist.addr[i], // public UWB address in little endian
+              loc.p_pos->x, // x pos mm
+              loc.p_pos->y, // y pos mm
+              loc.p_pos->z, // z pos mm
+              loc.p_pos->qf, // pos quality factor in %
+              //loc.anchors.dist.dist[i], // Distance to the anchore
+              //loc.anchors.dist.qf[i] // Quality factor of distances to anchors %
+            );
+
+            send_message_tag(udp_message);
+
       HAL_Print("WAS THE TAG UP THERE\n\n\n");
 
       for (i = 0; i < loc.anchors.dist.cnt; ++i)
