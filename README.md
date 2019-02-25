@@ -3,7 +3,7 @@ The purpose of this device is to Triangulate possition of a TAG in the Space min
 
 This code is using the example API provide with the device. Everything is on the raspberry pi and runing on it.
 
-## Code 
+## Code
 ```bash
 ### path to folder from root of the PI
 cd /DWM1001_DWM1001-DEV_MDEK1001_Sources_and_Docs_v8/DWM1001/Source_Code/DWM1001_host_api/dwm1001_host_api/examples/ex1_TWR_2Hosts/tag/
@@ -12,6 +12,11 @@ cd /DWM1001_DWM1001-DEV_MDEK1001_Sources_and_Docs_v8/DWM1001/Source_Code/DWM1001
 ```
 
 ## USE
-The use of this application is to send possitions, using UDP, to a third party application such as TouchDesigner, UNITY or other Realtime application. coordinate can be use to generate or manage interactive content.
+The use of this application is to send positions, using UDP, to a third party application such as TouchDesigner, UNITY or other Realtime application. coordinate can be use to generate or manage interactive content.
+
+## To Explore
+
+### Python_library for DWM1001
+https://github.com/ThingType/DW1000_Python_library
 
 Enjoy! 
